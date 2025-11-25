@@ -5,49 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EAB Platform</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
+    header { background:#0d6efd; color:white; padding:15px 0; text-align:center; }
+    header h1 { margin:0; font-size:2em; }
+    nav ul { list-style:none; padding:0; margin:10px 0 0 0; display:flex; justify-content:center; flex-wrap:wrap; }
+    nav ul li { margin:0 15px; }
+    nav ul li a { color:white; text-decoration:none; font-weight:bold; }
+    nav ul li a:hover { text-decoration:underline; }
+
+    section { padding:20px; max-width:1000px; margin:auto; }
+    h2 { text-align:center; color:#333; margin-bottom:20px; }
+    .service-category { background:white; padding:15px; margin-bottom:15px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .service-category h3 { margin-top:0; color:#0d6efd; }
+    .service-category ul { padding-left:20px; }
+    .service-category ul li { margin-bottom:8px; }
+
+    footer { background:#333; color:white; text-align:center; padding:15px 0; margin-top:20px; }
+    footer p { margin:5px 0; }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>EAB Platform</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="services.html">الخدمات</a></li>
-        <li><a href="projects.html">المشاريع</a></li>
-        <li><a href="team.html">الفريق</a></li>
-        <li><a href="contact.html">تواصل معنا</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- الخدمات -->
-  <section id="services">
-    <h2>الخدمات</h2>
-    <div class="service-category">
-      <h3>البرمجة والتطوير</h3>
-      <ul>
-        <li>برمجة مواقع وتطبيقات</li>
-        <li>روبوتات دردشة</li>
-        <li>مشاريع الذكاء الاصطناعي</li>
-      </ul>
-    </div>
-    <div class="service-category">
-      <h3>الهندسة</h3>
-      <ul>
-        <li>الهندسة الكهربائية</li>
-        <li>الميكانيك والتصميم</li>
-        <li>شبكات واتصالات</li>
-      </ul>
-    </div>
-    <!-- أضف باقي الفئات بنفس الطريقة -->
-  </section>
+<header>
+  <h1>EAB Platform</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="services.html">الخدمات</a></li>
+      <li><a href="projects.html">المشاريع</a></li>
+      <li><a href="team.html">الفريق</a></li>
+      <li><a href="contact.html">تواصل معنا</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Footer -->
-  <footer>
-    <p>هاتف: +967733071578 | +967784948116</p>
-    <p>بريد إلكتروني: eabplatform@gmail.com</p>
-    <p>تلجرام: @eabzero</p>
-  </footer>
+<section id="intro">
+  <h2>مرحبًا بك في منصة EAB</h2>
+  <p style="text-align:center; font-size:1.2em; color:#555;">
+    نقدم لك مجموعة متكاملة من الخدمات الأكاديمية، الهندسية، البرمجية والتصميمية لتسهيل تجربتك التعليمية.
+  </p>
+</section>
+
+<section id="services">
+  <h2>أهم الفئات</h2>
+  <div class="service-category">
+    <h3>البرمجة والتطوير</h3>
+    <ul>
+      <li>برمجة مواقع وتطبيقات</li>
+      <li>روبوتات دردشة</li>
+      <li>مشاريع الذكاء الاصطناعي</li>
+    </ul>
+  </div>
+  <div class="service-category">
+    <h3>الهندسة</h3>
+    <ul>
+      <li>الهندسة الكهربائية</li>
+      <li>الميكانيك والتصميم</li>
+      <li>شبكات واتصالات</li>
+    </ul>
+  </div>
+  <div class="service-category">
+    <h3>التصميم والجرافيك</h3>
+    <ul>
+      <li>تصميم شعارات وهوية بصرية</li>
+      <li>موشن غرافيك وعروض تقديمية</li>
+      <li>تصاميم سوشيال ميديا</li>
+    </ul>
+  </div>
+  <div class="service-category">
+    <h3>الخدمات الأكاديمية</h3>
+    <ul>
+      <li>إعداد بحوث ومقترحات البحث</li>
+      <li>تلخيص الكتب والمحاضرات</li>
+      <li>تنسيق المراجع والعروض</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>هاتف: +967733071578 | +967784948116</p>
+  <p>بريد إلكتروني: eabplatform@gmail.com</p>
+  <p>تلجرام: @eabzero</p>
+  <p>&copy; 2025 EAB Platform</p>
+</footer>
+
 </body>
 </html>
