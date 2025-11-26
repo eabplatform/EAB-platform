@@ -1,94 +1,368 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EAB Platform</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EAB Platform — المنصة الأكاديمية المتكاملة</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper (carousel) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
-    header { background:#0d6efd; color:white; padding:15px 0; text-align:center; }
-    header h1 { margin:0; font-size:2em; }
-    nav ul { list-style:none; padding:0; margin:10px 0 0 0; display:flex; justify-content:center; flex-wrap:wrap; }
-    nav ul li { margin:0 15px; }
-    nav ul li a { color:white; text-decoration:none; font-weight:bold; }
-    nav ul li a:hover { text-decoration:underline; }
 
-    section { padding:20px; max-width:1000px; margin:auto; }
-    h2 { text-align:center; color:#333; margin-bottom:20px; }
-    .service-category { background:white; padding:15px; margin-bottom:15px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
-    .service-category h3 { margin-top:0; color:#0d6efd; }
-    .service-category ul { padding-left:20px; }
-    .service-category ul li { margin-bottom:8px; }
-
-    footer { background:#333; color:white; text-align:center; padding:15px 0; margin-top:20px; }
-    footer p { margin:5px 0; }
-  </style>
+  <meta name="description" content="EAB Platform — منصة خدمات أكاديمية وهندسية وبرمجية احترافية للطلاب" />
 </head>
 <body>
 
-<header>
-  <h1>EAB Platform</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">الرئيسية</a></li>
-      <li><a href="services.html">الخدمات</a></li>
-      <li><a href="projects.html">المشاريع</a></li>
-      <li><a href="team.html">الفريق</a></li>
-      <li><a href="contact.html">تواصل معنا</a></li>
-    </ul>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fa-solid fa-graduation-cap me-2"></i>
+        <span class="fw-bold">EAB Platform</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">الخدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">المشاريع</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">الأسعار</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">الفريق</a></li>
+          <li class="nav-item"><a class="nav-link" href="#request">اطلب خدمة</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">تواصل</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
-</header>
 
-<section id="intro">
-  <h2>مرحبًا بك في منصة EAB</h2>
-  <p style="text-align:center; font-size:1.2em; color:#555;">
-    نقدم لك مجموعة متكاملة من الخدمات الأكاديمية، الهندسية، البرمجية والتصميمية لتسهيل تجربتك التعليمية.
-  </p>
-</section>
+  <!-- HERO -->
+  <header id="hero" class="py-5 bg-gradient">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6" data-aos="fade-left">
+          <h1 class="display-5 fw-bold">EAB Platform</h1>
+          <p class="lead text-muted">منصة خدمات أكاديمية وهندسية وبرمجية احترافية — حلول سريعة وجودة عالية.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#services" class="btn btn-light btn-lg">استعرض الخدمات</a>
+            <a href="#request" class="btn btn-outline-light btn-lg">اطلب خدمة</a>
+          </div>
+          <ul class="mt-4 list-unstyled text-muted small">
+            <li><i class="fa-solid fa-circle-check text-success me-2"></i>تسليم وفق المعايير الأكاديمية</li>
+            <li><i class="fa-solid fa-circle-check text-success me-2"></i>دعم فني وتحديثات مستمرة</li>
+            <li><i class="fa-solid fa-circle-check text-success me-2"></i>خصوصية وأخلاقية العمل</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-right">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=1"
+               class="img-fluid rounded shadow-lg" alt="EAB Platform hero image">
+        </div>
+      </div>
+    </div>
+  </header>
 
-<section id="services">
-  <h2>أهم الفئات</h2>
-  <div class="service-category">
-    <h3>البرمجة والتطوير</h3>
-    <ul>
-      <li>برمجة مواقع وتطبيقات</li>
-      <li>روبوتات دردشة</li>
-      <li>مشاريع الذكاء الاصطناعي</li>
-    </ul>
-  </div>
-  <div class="service-category">
-    <h3>الهندسة</h3>
-    <ul>
-      <li>الهندسة الكهربائية</li>
-      <li>الميكانيك والتصميم</li>
-      <li>شبكات واتصالات</li>
-    </ul>
-  </div>
-  <div class="service-category">
-    <h3>التصميم والجرافيك</h3>
-    <ul>
-      <li>تصميم شعارات وهوية بصرية</li>
-      <li>موشن غرافيك وعروض تقديمية</li>
-      <li>تصاميم سوشيال ميديا</li>
-    </ul>
-  </div>
-  <div class="service-category">
-    <h3>الخدمات الأكاديمية</h3>
-    <ul>
-      <li>إعداد بحوث ومقترحات البحث</li>
-      <li>تلخيص الكتب والمحاضرات</li>
-      <li>تنسيق المراجع والعروض</li>
-    </ul>
-  </div>
-</section>
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold">خدماتنا</h2>
+        <p class="text-muted">مجموعة واسعة من الخدمات التقنية والأكاديمية مصنفة حسب التخصص.</p>
+      </div>
 
-<footer>
-  <p>هاتف: +967733071578 | +967784948116</p>
-  <p>بريد إلكتروني: eabplatform@gmail.com</p>
-  <p>تلجرام: @eabzero</p>
-  <p>&copy; 2025 EAB Platform</p>
-</footer>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="50">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-start">
+                <i class="fa-solid fa-code fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="card-title">البرمجة والتطوير</h5>
+                  <p class="card-text text-muted small">تطوير مواقع، تطبيقات موبايل، أنظمة ويب، تكامل API، روبوتات دردشة.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="services.html#dev" class="stretched-link text-decoration-none">المزيد</a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-start">
+                <i class="fa-solid fa-cogs fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="card-title">الهندسة والمحاكاة</h5>
+                  <p class="card-text text-muted small">MATLAB, Simulink, ANSYS, COMSOL، أنظمة كهربائية وتحليلية.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="services.html#eng" class="stretched-link text-decoration-none">المزيد</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-start">
+                <i class="fa-solid fa-chart-line fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="card-title">تحليل البيانات والإحصاء</h5>
+                  <p class="card-text text-muted small">SPSS, Python, R، تحليل استبيانات، نمذجة بيانات، dashboards.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="services.html#data" class="stretched-link text-decoration-none">المزيد</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-start">
+                <i class="fa-solid fa-pencil-ruler fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="card-title">التصميم والجرافيك</h5>
+                  <p class="card-text text-muted small">شعارات، هوية بصرية، موشن جرافيك، تصميم عروض PowerPoint و3D.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="services.html#design" class="stretched-link text-decoration-none">المزيد</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="250">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-start">
+                <i class="fa-solid fa-book fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="card-title">الخدمات الأكاديمية</h5>
+                  <p class="card-text text-muted small">تنسيق أبحاث، مراجعات لغوية، تلخيصات، إعداد مقترحات وخطط بحث.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="services.html#academic" class="stretched-link text-decoration-none">المزيد</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-start">
+                <i class="fa-solid fa-language fa-2x text-primary me-3"></i>
+                <div>
+                  <h5 class="card-title">الترجمة والاستشارات</h5>
+                  <p class="card-text text-muted small">ترجمة أكاديمية، استشارات هندسية وإحصائية، تدريب تخصصي.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="services.html#other" class="stretched-link text-decoration-none">المزيد</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (Swiper slider) -->
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold">نماذج من مشاريعنا</h2>
+        <p class="text-muted">عرض مختصر لبعض أعمالنا السابقة</p>
+      </div>
+
+      <div class="swiper mySwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1581276879432-15a5c7f6f8de?q=80&w=1200&auto=format&fit=crop" class="img-fluid rounded" alt=""></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" class="img-fluid rounded" alt=""></div>
+          <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" class="img-fluid rounded" alt=""></div>
+        </div>
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold">الأسعار والخطط</h2>
+        <p class="text-muted">خطط تناسب احتياجات الطلاب والمشاريع</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="flip-left">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">خطة أساسية</h5>
+              <p class="card-text">خدمات سريعة وبسيطة — تبدأ من</p>
+              <h3 class="text-primary">5$</h3>
+              <ul class="list-unstyled text-muted">
+                <li>تصغير/تنسيق مستند</li>
+                <li>مراجعة سريعة</li>
+              </ul>
+              <a href="#request" class="btn btn-primary mt-3">اطلب الآن</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">خطة متوسطة</h5>
+              <p class="card-text">بحوث وتقارير — تبدأ من</p>
+              <h3 class="text-primary">15$</h3>
+              <ul class="list-unstyled text-muted">
+                <li>تنسيق متقدم</li>
+                <li>مراجعة لغوية</li>
+              </ul>
+              <a href="#request" class="btn btn-primary mt-3">اطلب الآن</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+          <div class="card h-100 text-center shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">خطة متقدمة</h5>
+              <p class="card-text">مشاريع متكاملة — تبدأ من</p>
+              <h3 class="text-primary">30$</h3>
+              <ul class="list-unstyled text-muted">
+                <li>مشروع كامل</li>
+                <li>دعم ما بعد التسليم</li>
+              </ul>
+              <a href="#request" class="btn btn-primary mt-3">اطلب الآن</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold">فريق EAB</h2>
+        <p class="text-muted">فريق من المطورين والمهندسين والمحللين المتخصصين</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card text-center h-100">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">م. أحمد</h5>
+              <p class="card-text text-muted">مهندس برمجيات / مدير تقنية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card text-center h-100">
+            <img src="https://images.unsplash.com/photo-1545996124-9a1f7de0b5b1?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">د. ليلى</h5>
+              <p class="card-text text-muted">محللة بيانات واستشارات إحصائية</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card text-center h-100">
+            <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=600&auto=format&fit=crop" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">م. سارة</h5>
+              <p class="card-text text-muted">مصممة جرافيك</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REQUEST FORM -->
+  <section id="request" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4" data-aos="fade-up">
+        <h2 class="fw-bold">اطلب خدمتك الآن</h2>
+        <p class="text-muted">املأ النموذج وسنرد عليك خلال 24-72 ساعة</p>
+      </div>
+
+      <div class="d-flex justify-content-center" data-aos="fade-up">
+        <div class="w-100" style="max-width: 1000px;">
+          <iframe src="https://forms.gle/uY1v3jRM8C1eWvs58" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0">جارٍ التحميل…</iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <h3>تواصل معنا</h3>
+          <p class="mb-1"><i class="fa-solid fa-phone me-2"></i> +967733071578</p>
+          <p class="mb-1"><i class="fa-solid fa-phone me-2"></i> +967784948116</p>
+          <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> eabplatform@gmail.com</p>
+          <p class="mb-0"><i class="fa-brands fa-telegram me-2"></i> @eabzero</p>
+        </div>
+        <div class="col-md-6 text-md-end" data-aos="fade-left">
+          <a href="https://t.me/eabzero" class="btn btn-light">تواصل عبر تلجرام</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center small">
+      <div>© <span id="year"></span> EAB Platform — جميع الحقوق محفوظة</div>
+      <div>تم تطوير المنصة باستخدام HTML / CSS / JS — نسخة تجريبية</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 </body>
 </html>
